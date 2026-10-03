@@ -26,7 +26,7 @@ targets:
       host: https://dbc-64cfe5a8-8ca8.cloud.databricks.com
     variables:
       catalog: dev_cicd_demo
-      schema: RnD
+      schema: dev
   prod:
     mode: production
     workspace:
@@ -35,7 +35,7 @@ targets:
       root_path: /Workspace/Users/dilipmgopinath@gmail.com/.bundle/${bundle.name}/${bundle.target}
     variables:
       catalog: dev_cicd_demo
-      schema: RnD
+      schema: prod
     permissions:
       - user_name: dilipmgopinath@gmail.com
         level: CAN_MANAGE
